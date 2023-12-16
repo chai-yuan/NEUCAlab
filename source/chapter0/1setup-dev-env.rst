@@ -61,6 +61,22 @@
 
 首先下载编译好的 `LoongArch32R 交叉编译工具链(Linux) <https://gitee.com/loongson-edu/la32r-toolchains/releases/download/v0.0.3/loongson-gnu-toolchain-8.3-x86_64-loongarch32r-linux-gnusf-v2.0.tar.xz>`_
 
+在终端当中执行下面命令，以安装工具链
+
+.. code-block:: bash
+   :linenos:
+
+   # 下面的命令将解压到/opt/目录
+   $ sudo tar zxvf loongarch32r-linux-gnusf-*.tar.gz -C /opt/
+   # 将工具链位置添加到环境变量
+   $ echo “ export PATH=/opt/loongarch32r-linux-gnusf-*/bin/:$PATH ” >> ~/.bashrc
+   # 检验工具链是否安装正确
+   $ loongarch32r-linux-gnusf-gcc --version
+   # 如果安装正确，你应当看到如下输出结果
+   loongarch32r-linux-gnusf-gcc (LoongArch GNU toolchain LA32 v2.0 (20230903)) 8.3.0
+   Copyright (C) 2018 Free Software Foundation, Inc.
+   This is free software; see the source for copying conditions.  There is NO
+   warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 **Windows下工具链安装(未经测试)**
 
