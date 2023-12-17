@@ -24,7 +24,11 @@
 
 该指导书为 `东北大学计算机组成原理` 课程设计 `LoongArch` 版指导书，旨在帮助同学们入门 `LoongArch` 指令集的处理器设计和相应的编程任务。
 
-更多的参考资料，详见于 `CPU设计实战：LoongArch版 <https://bookdown.org/loongson/_book3/>`_
+更多的参考资料，详见于 
+
+`CPU设计实战：LoongArch版<在线版实验指导> <https://bookdown.org/loongson/_book3/>`_
+
+`CPU设计实战：LoongArch版<pdf> <https://bookdown.org/loongson/_book3/>`_
 
 导读
 ---------------------

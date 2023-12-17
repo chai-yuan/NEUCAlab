@@ -64,7 +64,6 @@
 在终端当中执行下面命令，以安装工具链
 
 .. code-block:: bash
-   :linenos:
 
    # 下面的命令将解压到/opt/目录
    $ sudo tar zxvf loongarch32r-linux-gnusf-*.tar.gz -C /opt/
