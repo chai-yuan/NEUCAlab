@@ -1,0 +1,50 @@
+代码框架简述
+=====================
+
+代码框架
+---------------------
+
+从实验包当中，拿到的代码框架如下
+
+.. code-block:: bash
+
+    .
+    ├── dc_env
+    ├── minicpu_env
+    │   ├── func
+    │   ├── miniCPU
+    │   └── soc_verify
+    ├── mycpu_env
+    │   ├── func
+    │   ├── gettrace
+    │   ├── module_verify
+    │   ├── myCPU
+    │   └── soc_verify
+    └── README
+
+其中顶层分为3个文件夹
+
+- dc_env:数字电路实验，用于练习数字电路组件开发，不是本次的实验要求
+
+- minicpu_env:实验1的工作目录，其中的子目录作用
+    - func:miniCPU所要运行的代码程序目录
+    - miniCPU:你所要完成的miniCPU的代码
+    - soc_verify:用于创建Vivado工程，仿真测试和上板测试
+
+- mycpu_env:后续全部的工作目录，其中的子目录作用
+    - func:myCPU所需要运行的程序
+    - gettrace:用于difftest的正确设计CPU
+    - module_verify:处理器组建的单独测试，本次实验不会用到
+    - myCPU:你所要完成的代码目录
+    - soc_verify:用于创建Vivado工程，仿真测试和上板测试
+
+.. hint:: 
+
+    你所需要修改和完成的代码全部放在 miniCPU 和 myCPU 目录之下
+
+    除少量配置项(这并非必要的)外，你不需要修改其他目录当中的代码，以免造成其他影响实验错误
+
+
+
+
+   
