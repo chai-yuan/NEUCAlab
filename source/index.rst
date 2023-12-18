@@ -2,15 +2,17 @@
 ==================================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: 正文
    :hidden:
    
    chapter0/index
    chapter1/index
+   chapter2/index
+   chapter3/index
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: 附录
    :hidden:
 
@@ -41,5 +43,7 @@
 
 项目进度
 -----------------------
+
+现在项目还在更新中，可能存在许多错误和不完整的地方
 
 - 2023-12-15: 项目创建
