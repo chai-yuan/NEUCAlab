@@ -51,6 +51,9 @@
 安装 `LoongArch32r` GNU 工具链 
 ---------------------------------------------------------------------
 
+.. tip:: 安装编译工具链的目的是对LoongArch32R源程序进行编译，如果难以安装，可以选择下载 `gitee实验发行包 <https://gitee.com/loongson-edu/cdp_ede_local/releases>`_
+   内部包含编译好的.coe文件
+
 在进行 实验2 和 实验3 的过程中，如果需要自行编译 func 程序需要使用 LoongArch32R 的 GCC 交叉编译工具。该工具链的安装可以通过
 `源代码编译安装 <https://gitee.com/loongson-edu/la32r-toolchains>`_ 
 也可以使用编译好的
