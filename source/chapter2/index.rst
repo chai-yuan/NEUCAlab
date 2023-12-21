@@ -4,3 +4,7 @@
 .. toctree::
    :maxdepth: 3
 
+   0实验用Soc简介
+   1编译获得coe文件
+   2基于trace的调试框架
+   3完成实验2
