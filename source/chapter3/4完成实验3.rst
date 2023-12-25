@@ -1,2 +1,55 @@
 完成实验3
 =====================
+
+获得gettrace.txt文件
+-------------------------
+
+打开gettrace工程——mycpu_env/gettrace/gettrace.xpr。运行gettrace工程的仿真（进入仿真界面后，直接点击run all等待仿真运行完成），生成新的参考trace文件golden_trace.txt（mycpu_env/gettrace/golden_trace.txt）。要等仿真运行完成，golden_trace.txt才有完整的内容。
+（如果是通过压缩包exp7.zip获取实验开发环境的，可以跳过该步骤。）
+
+.. hint:: 
+    
+    利用create_project.tcl创建工程可参考 `利用tcl创建Vivado工程 <https://bookdown.org/loongson/_book3/appendix-vivado-advanced-usage.html#sec-vivado-tcl-create-project>`_
+
+    如果使用的Vivado版本并非 2019.2 版本可参考 `升级工程和IP核 <https://bookdown.org/loongson/_book3/appendix-vivado-advanced-usage.html#sec-upgrade-project-ip>`_
+
+开发CPU代码
+---------------------
+
+在目录mycpu_env/myCPU/当中进行自己的处理器开发
+
+创建Vivado工程
+---------------------
+
+进入 mycpu_env/soc_verify/soc_bram/run_vivado/ 目录下启动验证myCPU的工程。
+
+**注意，是soc_bram，别看错了**
+
+仿真验证自己的CPU
+---------------------
+
+在验证myCPU的工程中运行仿真
+
+如果执行正确，结果类似于下图
+
+.. image:: simulation_pass_console_info.png
+
+.. hint:: 
+    
+    如果仿真后，发现CPU没有正确执行程序，可以结合 func/obj/inst_ram.txt 当中的代码进行调试
+
+    如果仿真后，发现仿真没有正确执行，请检查仿真设置
+
+
+上板验证自己的CPU
+---------------------
+
+在FPGA上板验证时其结果正确与否的判断也只有一种方法，func正确的执行行为是：
+
+- 开始，单色LED全灭，双色LED灯一红一绿，数码管显示全0；
+- 执行过程中，单色LED全灭，双色LED灯一红一绿，数码管高8位和低8位同步累加；
+- 结束时，单色LED全灭，双色LED灯亮两绿，数码管高8位和低8位数值相同，对应测试功能点数目。
+
+.. hint:: 
+
+    如果仿真没用通过，寄希望于上板通过不如再多检查检查
